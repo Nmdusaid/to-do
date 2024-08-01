@@ -1,0 +1,148 @@
+/* Global Styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Changed from height to min-height */
+    background: rgb(236, 155, 236);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  /* List Styles */
+  .list {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
+    background-color: rgba(43, 41, 43, 0.5);
+    width: 90%;
+    max-width: 800px;
+    border-radius: 6px;
+    padding: 20px; /* Adjusted for consistent padding */
+  }
+  
+  /* Heading Styles */
+  .h1 {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 19px /* Changed to rem for consistency */
+  }
+  
+  /* List Item Styles */
+  .li {
+    margin: 10px 0; /* Consistent margin for list items */
+    background: rgb(166, 241, 241);
+    padding: 10px 15px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between; /* Space between text and icon */
+    font-size: 1.2rem; /* Changed to rem */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-radius: 5px;
+  }
+  
+  /* Icon Styles */
+  i {
+    font-size: 1.2rem; /* Changed to rem */
+  }
+  
+  /* Form Styles */
+  #form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centering the form items */
+    margin: 20px 0; /* Margin for spacing */
+  }
+  
+  /* Input Styles */
+  #design {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+    outline: none;
+    width: 100%;
+    max-width: 600px;
+    height: 40px; /* Fixed height for better control */
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: 0 10px;
+    margin-bottom: 10px; /* Margin for spacing */
+  }
+  
+  /* Button Styles */
+  #btn {
+    cursor: pointer;
+    outline: none;
+    width: 150px;
+    height: 40px; /* Fixed height for better control */
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #666; /* Added background color for visibility */
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+    transition: background-color 0.3s; /* Transition for hover effect */
+  }
+  
+  #btn:hover {
+    background-color: #333; /* Darker shade on hover */
+  }
+  
+  /* Inner Container Styles */
+  .in {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .h1 {
+      font-size: 1rem;
+    }
+    .li {
+      font-size: 1rem;
+      padding: 8px 10px;
+    }
+    i {
+      font-size: 1rem;
+    }
+    #design {
+      height: 35px;
+      font-size: 0.9rem;
+    }
+    #btn {
+      width: 120px;
+      height: 35px;
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .h1 {
+      font-size: 1rem;
+    }
+    .li {
+      font-size: 0.9rem;
+      padding: 5px 8px;
+    }
+    i {
+      font-size: 0.9rem;
+    }
+    #design {
+      height: 30px;
+      font-size: 0.8rem;
+    }
+    #btn {
+      width: 100px;
+      height: 30px;
+      font-size: 0.8rem;
+    }
+  }
+  
